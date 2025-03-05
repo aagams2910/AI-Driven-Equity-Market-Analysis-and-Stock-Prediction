@@ -1,106 +1,82 @@
-# AI-Driven Equity Market Analysis Backend
+# AI-Driven Equity Market Analysis and Stock Prediction
 
-This is the backend application for the AI-Driven Equity Market Analysis and Stock Prediction platform. It's built with Python and Flask to provide robust API endpoints for data processing and analysis.
+A modern web application that leverages artificial intelligence to provide detailed, logically consistent stock analysis and market narratives with minimal probabilistic errors.
 
-## Features
+## Project Overview
 
-- Financial document processing and summarization
-- Real-time market data retrieval
-- News integration and analysis
-- AI-driven stock recommendations
-- Trade simulation with risk assessment
+This project integrates AI capabilities into the financial sector to analyze vast datasets, process real-time financial news, historical data, and technical indicators. The system uses a combination of React.js for the frontend and Python for the backend processing.
 
-## Prerequisites
+## Core Features
 
-- Python 3.8 or higher
+1. **Multimodal Financial Document Processing and Summarization**
+   - Process and summarize complex financial documents including regulatory filings, earnings reports, and visual data
+   - Utilize Retrieval-Augmented Generation (RAG) framework for accurate financial document analysis
+
+2. **Real-Time Financial News and Market Data Integration**
+   - Continuous updates of financial news, stock prices, and economic indicators
+   - Integration with financial news APIs and stock market data feeds
+
+3. **Mother Model for Trade Simulation and Stock Recommendations**
+   - Interactive trade simulation tools
+   - AI-driven stock recommendations with probabilistic consistency
+   - Visual representation of analysis and predictions
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v14.0.0 or later)
+- Python (v3.8 or later)
 - pip (Python package manager)
-- Virtual environment (recommended)
 
-## Installation
+### Installation
 
-1. Navigate to the backend directory:
+1. Clone the repository
    ```
-   cd backend
-   ```
-
-2. Create and activate a virtual environment (recommended):
-   ```
-   python -m venv venv
-   
-   # On Windows
-   venv\Scripts\activate
-   
-   # On macOS/Linux
-   source venv/bin/activate
+   git clone <repository-url>
+   cd ai-driven-equity-market-analysis
    ```
 
-3. Install dependencies:
+2. Install frontend dependencies
    ```
+   cd frontend
+   npm install
+   ```
+
+3. Install backend dependencies
+   ```
+   cd ../backend
    pip install -r requirements.txt
    ```
 
-4. Create a `.env` file in the root of the backend directory based on the `.env.example` file:
-   ```
-   cp .env.example .env
-   ```
-   
-5. Edit the `.env` file and add your API keys and configuration.
+4. Start the development servers
+   - Frontend: `cd frontend && npm start`
+   - Backend: `cd backend && python app.py`
 
-## Development
-
-To start the development server:
-
-```
-python app.py
-```
-
-This will run the Flask application in development mode on http://localhost:5001.
-
-## API Endpoints
-
-### Health Check
-- `GET /api/health` - Check if the API is running
-
-### Document Processing
-- `POST /api/document/process` - Process and analyze financial documents
-
-### Market Data
-- `GET /api/market/data` - Get real-time market data for specified symbols
-- `GET /api/news` - Get latest news for specified symbols
-
-### Stock Recommendations
-- `GET /api/recommendations` - Get AI-driven stock recommendations
-
-### Trade Simulation
-- `POST /api/simulate/trade` - Simulate a trade and analyze potential outcomes
+5. Open your browser and navigate to `http://localhost:3000`
 
 ## Project Structure
 
 ```
-backend/
-├── app.py                # Main application entry point
-├── document_processing.py # Document processing module
-├── market_data.py        # Market data retrieval module
-├── mother_model.py       # AI model for predictions
-├── utils/                # Utility functions
-├── requirements.txt      # Python dependencies
-└── .env.example          # Example environment variables
+ai-driven-equity-market-analysis/
+├── frontend/                  # React.js frontend
+│   ├── public/                # Static files
+│   └── src/                   # Source files
+│       ├── components/        # React components
+│       ├── pages/             # Page components
+│       ├── services/          # API services
+│       └── assets/            # Images, styles, etc.
+├── backend/                   # Python backend
+│   ├── app.py                 # Main application entry
+│   ├── document_processing.py # Document processing module
+│   ├── market_data.py         # Market data integration
+│   ├── mother_model.py        # Trade simulation and recommendations
+│   └── utils/                 # Utility functions
+└── README.md                  # Project documentation
 ```
 
 ## Technologies Used
 
-- Python - Backend language
-- Flask - Web framework
-- Pandas - Data manipulation
-- NumPy - Numerical computations
-- PyTorch - Deep learning
-- scikit-learn - Machine learning
-- NLTK - Natural language processing
+- **Frontend**: React.js, Chart.js, Material-UI, Axios
+- **Backend**: Python, Flask, pandas, numpy, scikit-learn, PyTorch
+- **APIs**: Financial news APIs, Stock market data feeds
 
-## Best Practices
-
-- Follow PEP 8 style guidelines
-- Write docstrings for all functions and classes
-- Use environment variables for configuration
-- Implement proper error handling
-- Log important events and errors
