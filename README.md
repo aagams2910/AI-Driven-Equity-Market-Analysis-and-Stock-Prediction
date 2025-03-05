@@ -32,7 +32,7 @@ This project integrates AI capabilities into the financial sector to analyze vas
 
 1. Clone the repository
    ```
-   git clone <repository-url>
+   git clone https://github.com/aagams2910/AI-Driven-Equity-Market-Analysis-and-Stock-Prediction.git
    cd ai-driven-equity-market-analysis
    ```
 
