@@ -1,0 +1,63 @@
+# ------------------------
+#  Python
+# ------------------------
+# Compiled files
+__pycache__/
+*.py[cod]
+
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyo
+*.pyd
+
+# ------------------------
+#  Virtual Environments
+# ------------------------
+# If you have multiple virtual envs, ignore them all
+.venv/
+venv/
+# ------------------------
+#  Environment / Secrets
+# ------------------------
+# Private environment variables
+.env/
+.env.*
+
+# Keep .env.example so that others know the required env variables
+!.env.example
+
+# ------------------------
+#  Editor / IDE
+# ------------------------
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# ------------------------
+#  OS-Specific Files
+# ------------------------
+.DS_Store
+Thumbs.db
+
+# ------------------------
+#  Logs & Temp Files
+# ------------------------
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ------------------------
+#  Node / Frontend (if applicable)
+# ------------------------
+node_modules/
+dist/
+build/
+
+# ------------------------
+#  Additional Config
+# ------------------------
+# If you have any personal or machine-specific config files in 'frontend' or 'backend'
+# you can add them here (e.g. local config files or cache files).
