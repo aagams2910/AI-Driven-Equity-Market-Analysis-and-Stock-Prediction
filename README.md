@@ -6,6 +6,8 @@ A modern web application that leverages artificial intelligence to provide detai
 
 This project integrates AI capabilities into the financial sector to analyze vast datasets, process real-time financial news, historical data, and technical indicators. The system uses a combination of React.js for the frontend and Python for the backend processing.
 
+Working of Project : https://drive.google.com/file/d/1p2tPqHRDhFwfJDxw0izHL-dKcSGRh8IW/view?usp=sharing
+
 ## Core Features
 
 1. **Multimodal Financial Document Processing and Summarization**
@@ -79,5 +81,3 @@ ai-driven-equity-market-analysis/
 - **Frontend**: React.js, Chart.js, Material-UI, Axios
 - **Backend**: Python, Flask, pandas, numpy, scikit-learn, PyTorch
 - **APIs**: Financial news APIs, Stock market data feeds
-
-Working of model : https://drive.google.com/file/d/1p2tPqHRDhFwfJDxw0izHL-dKcSGRh8IW/view?usp=sharing
