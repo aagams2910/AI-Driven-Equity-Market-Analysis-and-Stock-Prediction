@@ -72,15 +72,33 @@ def financial_news():
         symbols = request.args.get('symbols', None)
         limit = int(request.args.get('limit', 10))
         
+        print(f"Received request for news with symbols: {symbols}, limit: {limit}")
+        
         news = get_financial_news(symbols, limit)
         
-        return jsonify({
-            "success": True,
-            "data": news
-        }), 200
+        # Check if news is a list (expected format after our changes)
+        if isinstance(news, list):
+            return jsonify(news), 200
+        # Check if news is a dict with error message
+        elif isinstance(news, dict) and "error" in news:
+            return jsonify({
+                "success": False,
+                "error": news["error"],
+                "data": news.get("data", [])
+            }), 400
+        # Fallback for any other format
+        else:
+            return jsonify(news), 200
     
     except Exception as e:
-        return jsonify({"error": str(e)}), 500
+        print(f"Error in financial_news endpoint: {str(e)}")
+        import traceback
+        traceback.print_exc()
+        return jsonify({
+            "success": False,
+            "error": str(e),
+            "data": []
+        }), 400
 
 @app.route('/api/recommendations', methods=['GET'])
 def stock_recommendations():
