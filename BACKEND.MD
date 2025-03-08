@@ -1,15 +1,3 @@
-# AI-Driven Equity Market Analysis Backend
-
-This is the backend application for the AI-Driven Equity Market Analysis and Stock Prediction platform. It's built with Python and Flask to provide robust API endpoints for data processing and analysis.
-
-## Features
-
-- Financial document processing and summarization
-- Real-time market data retrieval
-- News integration and analysis
-- AI-driven stock recommendations
-- Trade simulation with risk assessment
-
 ## Prerequisites
 
 - Python 3.8 or higher
