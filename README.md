@@ -80,3 +80,4 @@ ai-driven-equity-market-analysis/
 - **Backend**: Python, Flask, pandas, numpy, scikit-learn, PyTorch
 - **APIs**: Financial news APIs, Stock market data feeds
 
+Working of model : https://drive.google.com/file/d/1p2tPqHRDhFwfJDxw0izHL-dKcSGRh8IW/view?usp=sharing
