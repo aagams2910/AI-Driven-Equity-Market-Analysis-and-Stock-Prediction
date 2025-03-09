@@ -1,4 +1,4 @@
-# AI-Driven Equity Market Analysis and Stock Prediction
+# AI-Driven Equity Market Analysis and Stock Recommendation
 
 A modern web application that leverages artificial intelligence to provide detailed, logically consistent stock analysis and market narratives with minimal probabilistic errors.
 
